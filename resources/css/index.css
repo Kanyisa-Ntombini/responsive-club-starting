@@ -6,6 +6,9 @@
 html {
   font-size: 16px;
 }
+h2, h3 {
+  text-align: center;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -63,8 +66,22 @@ nav ul li a {
 }
 
 #banner h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   color: rgba(44, 42, 42, 0.89);
+}
+@media screen and (max-width: 48rem) {
+  nav ul li a {
+    font-size: 1.5rem;
+  }
+  nav {
+    height: 5rem;
+  }
+  nav ul li:last-child {
+    display: none;
+  }
+  #banner {
+    top: 7rem;
+  }
 }
 
 /* Main */
@@ -81,12 +98,19 @@ section {
   grid-template-columns: 1fr 1fr;
   /*height: 10rem;*/
 }
-/*.paragraph {
-  overflow: scroll;
-  max-height: 100%;
-}*/
+.paragraph {
+  /*overflow: scroll;
+  max-height: 100%;*/
+  margin-bottom: 1rem;
+}
 .image-container img {
   margin: 0 auto;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 48rem) {
+  .side-by-side {
+    display: block;
+  }
 }
 
 /* Contact */
