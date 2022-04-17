@@ -6,8 +6,10 @@
 html {
   font-size: 16px;
 }
-h2, h3 {
-  text-align: center;
+p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  text-align: justify;
 }
 img {
   max-width: 100%;
@@ -16,7 +18,7 @@ img {
 }
 header, main, footer {
   width: 96%;
-  margin: 0 1rem;
+  margin: 0 2rem;
 }
 .justify {
   text-align: justify;
@@ -24,19 +26,25 @@ header, main, footer {
 .center {
   text-align: center;
 }
-.border {
-  border: 0.1rem solid black;
+.mobile {
+  display: block;
+}
+.desktop {
+  display: none;
+}
+@media screen and (min-width: 30rem) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
 }
 
 /* Header */
 nav {
   background-color: gainsboro;
-  border: 0.1rem solid black;
-  border-radius: 0.25rem;
-  position: fixed;
-  z-index: 1;
-  width: 96%;
-  height: 3rem;
+  padding: 0.5rem 0;
 }
 nav ul {
   display: flex;
@@ -46,70 +54,77 @@ nav ul {
 nav ul li {
   list-style: none;
 }
-
-nav ul li a {
+a {
   color: purple;
+  text-decoration: none;
+  font-size: 1rem;
 }
-
+nav ul li a:hover {
+  text-decoration: none;
+}
+#home-img {
+  border: 0.1rem solid black;
+  border-radius: 50%;
+  width: 3.125rem;
+}
 #banner {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 5rem;
-  width: 96%;
-  height: 100%;
   background-image: url('../images/reading.jpg');
   background-repeat: none;
   background-position: center;
   background-size: cover;
+  margin-top: 1rem;
 }
-
 #banner h1 {
-  font-size: 5rem;
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 2.5rem;
+  padding-bottom: 10rem;
   color: rgba(44, 42, 42, 0.89);
 }
-@media screen and (max-width: 48rem) {
+@media screen and (min-width: 30rem) {
   nav ul li a {
     font-size: 1.5rem;
   }
-  nav {
-    height: 5rem;
-  }
-  nav ul li:last-child {
-    display: none;
-  }
-  #banner {
-    top: 7rem;
+  .side-by-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 /* Main */
-main {
-  position: absolute;
-  top: 32rem;
-}
 section {
   padding: 1rem;
   margin: 1rem 0;
 }
-.side-by-side {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /*height: 10rem;*/
-}
-.paragraph {
-  /*overflow: scroll;
-  max-height: 100%;*/
-  margin-bottom: 1rem;
+h2, h3 {
+  text-align: center;
 }
 .image-container img {
   margin: 0 auto;
   margin-bottom: 1rem;
+  width: 50%;
 }
-@media screen and (max-width: 48rem) {
-  .side-by-side {
-    display: block;
+.read-more a {
+  color: purple;
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+.main-page {
+  background-color: gainsboro;
+}
+@media screen and (min-width: 30rem) {
+  #book-week {
+    margin: 1rem auto;
+  }
+  .image-container {
+    width: 75%;
+  }
+  #grid-book-review {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-article {
+    align-self: center;
   }
 }
 

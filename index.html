@@ -10,48 +10,63 @@
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="mobile">
+      <ul>
+        <li><a href="#"><img id="home-img" src="./resources/images/home.ico" alt=""></a></li>
+        <li><a href="#book-week">Book of the Week</a></li>
+        <li><a href="./resources/tabs/book-review.html">Book Review</a></li>
+      </ul>
+    </nav>
+    <nav class="desktop">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#book-week">Book of the Week</a></li>
-        <li><a href="book-review">Book Review</a></li>
+        <li><a href="./resources/tabs/book-review.html">Book Review</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <div id="banner">
-      <h1>Book Club</h1>
+      <h1>Azania's Book Club</h1>
     </div>
   </header>
 
   <main>
-    <section id="about" class="border">
+    <section id="about">
       <h2>About</h2><br>
-      <p class="justify">This book club is a space for black women from all walks of life to explore their love of books and reading.</p>
+      <p class="justify">This book club is a space for black women from all walks of life to explore their love of books and reading.</p><br>
       <p class="justify">The topics covered in this book club range from stories told about or include black women. We also cover topics such as Pan Africanism, Black Consciousness and Intersectionality. We also explore books that may not necessarily have black women in them but that our readers like anyway.</p>
     </section>
 
     <!-- Book of the week-->
-    <section id="book-week" class="border">
+    <section id="book-week" class="main-page">
       <h2>Book of the Week</h2><br>
+      <h3>Homegoing <span class="author">by Yaa Gyasi</span></h3><br>
       <div class="side-by-side">
-        <div class="image-container picture">
+        <div class="image-container">
           <img src="./resources/images/homegoing.jpg" alt="">
         </div>
         <div class="paragraph">
-          <h3>Homegoing <span class="author">by Yaa Gyasi</span></h3><br>
-          <p class="justify">Two half-sisters, Effia and Esi, are born into different villages in eighteenth-century Ghana. Effia is married off to an Englishman and lives in comfort in the palatial rooms of Cape Coast Castle. Unbeknownst to Effia, her sister, Esi, is imprisoned beneath her in the castle's dungeons, sold with thousands of others into the Gold Coast's booming slave trade, and shipped off to America, where her children and grandchildren will be raised in slavery. One thread of Homegoing follows Effia's descendants through centuries of warfare in Ghana, as the Fante and Asante nations wrestle with the slave trade and British colonization. The other thread follows Esi and her children into America. From the plantations of the South to the Civil War and the Great Migration, from the coal mines of Pratt City, Alabama, to the jazz clubs and dope houses of twentieth-century Harlem, right up through the present day, Homegoing makes history visceral, and captures, with singular and stunning immediacy, how the memory of captivity came to be inscribed in the soul of a nation.</p>
+          <p class="justify">Homegoing, by Yaa Gyasi, is a historical novel that traces the descendants of two half-sisters Effia and Esi, born into different villages in Ghana. The sisters' lives follow different paths: Effia marries a wealthy Englishman and lives in Cape Coast Castle, while Esi is captured during a raid and sold into slavery.</p>
         </div>
       </div>
     </section>
 
     <!-- Book review -->
-    <section id="book-review" class="border">
-      <h2>Book Review</h2><br>
-      <div class="side-by-side">
+    <section id="book-review" class="main-page">
+      <h2 class="center">Book Review</h2><br>
+      <h3>Angels & Demons <span class="author">by Dan Brown</span></h3><br>
+      <div class="mobile">
+        <div class="image-container picture">
+          <img src="./resources/images/danbrown.jpg" alt="">
+        </div>
         <div class="paragraph">
-          <h3>Angels & Demons <span class="author">by Dan Brown</span></h3><br>
-          <p class="justify">Pitting scientific terrorists against the cardinals of Vatican City, this well-plotted if over-the-top thriller is crammed with Vatican intrigue and high-tech drama. Robert Langdon, a Harvard specialist on religious symbolism, is called in by a Swiss research lab when Dr. Vetra, the scientist who discovered antimatter, is found murdered with the cryptic word ""Illuminati"" branded on his chest. These Iluminati were a group of Renaissance scientists, including Galileo, who met secretly in Rome to discuss new ideas in safety from papal threat; what the long-defunct association has to do with Dr. Vetra's death is far from clear. Vetra's daughter, Vittoria, makes a frightening discovery: a lethal amount of antimatter, sealed in a vacuum flask that will explode in six hours unless its batteries are recharged, is missing. Almost immediately, the Swiss Guard discover that the flask is hidden beneath Vatican City, where the conclave to elect a new pope has just begun. Vittoria and Langdon rush to recover the canister, but they aren't allowed into the Vatican until it is discovered that the four principal papal candidates are missing. The terrorists who are holding the cardinals call in regarding their pending murders, offering clues tied to ancient Illuminati meeting sites and runes. Meanwhile, it becomes clear that a sinister Vatican entity with messianic delusions is in league with the terrorists. Packing the novel with sinister figures worthy of a Medici, Brown (Digital Fortress) sets an explosive pace as Langdon and Vittoria race through a Michelin-perfect Rome to try to save the cardinals and find the antimatter before it explodes. Though its premises strain credulity, Brown's tale is laced with twists and shocks that keep the reader wired right up to the last revelation.</p>
+          <p class="justify">A brilliant page turner for readers who love fast paced storyline and drama. Angels and Demons is an amazing thriller by Dan Brown, the same writer who wrote Da Vinci Code. The book has the same protagonist, Robert Langdon who is an iconology professor and is set in in the cobbled street of Europe and the Vatican City. <span class="read-more"><a href="./resources/tabs/book-review.html">Read more...</a></span></p><br> 
+        </div>
+      </div>
+      <div class="side-by-side desktop">
+        <div class="paragraph">
+          <p class="justify">A brilliant page turner for readers who love fast paced storyline and drama. Angels and Demons is an amazing thriller by Dan Brown, the same writer who wrote Da Vinci Code. The book has the same protagonist, Robert Langdon who is an iconology professor and is set in in the cobbled street of Europe and the Vatican City. <span class="read-more"><a href="./resources/tabs/book-review.html">Read more...</a></span></p><br>
         </div>
         <div class="image-container picture">
           <img src="./resources/images/danbrown.jpg" alt="">
@@ -59,7 +74,7 @@
       </div>
     </section> 
 
-    <section id="contact" class="border">
+    <section id="contact">
       <h2>Contact us</h2><br>
       <ul class="center">
         <li>397 5th Avenue</li>
@@ -68,7 +83,7 @@
       </ul><br>
 
       <p class="center">(+27)-11-978-1000</p><br>
-      <p class="center">&copy; Kanyisa Ntombini</p>
+      <p class="center">&copy; Kanyisa Ntombini 2022</p>
     </section>
   </main>
 </body>
